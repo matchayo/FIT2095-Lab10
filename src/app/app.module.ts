@@ -18,6 +18,7 @@ import { ViewNotFoundComponent } from './components/view-not-found/view-not-foun
 import { AgePipe } from './pipes/age/age.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { OldOrNotPipe } from './pipes/old-or-not/old-or-not.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { environment } from '../environments/environment';
     ListMoviesComponent,
     AddActorToMovieComponent,
     ViewNotFoundComponent,
-    AgePipe
+    AgePipe,
+    OldOrNotPipe
   ],
   imports: [
     BrowserModule,

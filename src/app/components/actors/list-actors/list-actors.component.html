@@ -4,11 +4,13 @@
         <th>Name</th>
         <th>Birth Year</th>
         <th>Age</th>
+        <th>Old or Not?</th>
       </tr>
       <tr *ngFor="let item of actorsDB">
         <td>{{item.name}}</td>
         <td>{{item.bYear}}</td>
         <td>{{item.bYear|age}}</td>
+        <td>{{item.bYear|oldOrNot:"actors"}}</td>
       </tr>
     </table>
   </div>
